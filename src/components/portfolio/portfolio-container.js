@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 
-import PortfolioItem from './portfolio-item'
+import PortfolioItem from './portfolio-item';
 
 export default class PortfolioContainer extends Component {
     // State
@@ -26,7 +26,6 @@ export default class PortfolioContainer extends Component {
     getPortfolioItems() {
         axios.get("https://ghertadan.devcamp.space/portfolio/portfolio_items")
             .then(response => {
-                console.log('response data', response);
                 this.setState({
                     data: response.data.portfolio_items
                 })
