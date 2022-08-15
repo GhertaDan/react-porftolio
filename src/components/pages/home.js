@@ -5,7 +5,6 @@ export default function () {
     return (
         <div>
             <PortfolioContainer />
-
         </div>
     )
 }
