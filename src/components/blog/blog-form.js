@@ -42,7 +42,7 @@ export default class BlogForm extends Component {
         })
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         if(this.props.editMode) {
             const {id, title, blog_status, content} = this.props.blog;
             this.setState({

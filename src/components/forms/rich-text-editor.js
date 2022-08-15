@@ -17,7 +17,7 @@ export default class RichTextEditor extends Component {
         this.getBase64 = this.getBase64.bind(this);
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         if(this.props.editMode && this.props.contentToEdit) {
             const blocksFromHtml = htmlToDraft(this.props.contentToEdit);
             const { contentBlocks, entityMap } = blocksFromHtml;
