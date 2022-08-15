@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { DropzoneComponent } from 'react-dropzone-component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import RichTextEditor from '../forms/rich-text-editor';
 
@@ -126,6 +127,19 @@ export default class BlogForm extends Component {
                 </div>
 
                 <div className="image-uploaders">
+
+                    {this.props.editMode && this.props.blog.featured_image_url ? 
+                    <div className='portfolio-manager-image-wrapper'>
+                        <img src={this.props.blog.featured_image_url} />
+
+                        <div className='image-removal-link'>
+                            <a>
+                                {/* <FontAwesomeIcon icon="minus-square" /> */}
+                                remove file
+                            </a>
+                        </div>
+                    </div>
+                    :
                     <DropzoneComponent
                     ref={this.featuredImageRef}
                         config={this.componentConfig()}
@@ -134,6 +148,7 @@ export default class BlogForm extends Component {
                     >
                         <div className="dz-message">Featured Image</div>
                     </DropzoneComponent>
+                    }
                 </div>
 
 
