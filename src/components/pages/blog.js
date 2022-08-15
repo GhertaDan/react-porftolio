@@ -64,7 +64,6 @@ class Blog extends Component {
         axios.get(`https://ghertadan.devcamp.space/portfolio/portfolio_blogs?page=${this.state.currentPage}`,
             { withCredentials: true }
         ).then(response => {
-            console.log('getting', response.data);
             this.setState({
                 blogItems: this.state.blogItems.concat(
                     response.data.portfolio_blogs),
