@@ -1,8 +1,8 @@
 {
-    "editor.cursorStyle": "line-thin",
-    "editor.cursorBlinking": "smooth",
-    "editor.fontFamily": "'JetBrains Mono' , 'Courier New', monospace",
-    "ecsstractor_port.attributes": "className",
-    "ecsstractor_port.add_comment": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontFamily": "'Fira Code' , 'Courier New', monospace",
+  "ecsstractor_port.attributes": "className",
+  "ecsstractor_port.add_comment": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
